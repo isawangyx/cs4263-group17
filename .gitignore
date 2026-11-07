@@ -1,0 +1,19 @@
+# Publish only the current source code and required benchmark inputs.
+# Everything else remains local unless explicitly added to this allowlist.
+*
+!.gitignore
+!README.md
+!prompts.md
+!analyze_results.py
+!check_benchmark.py
+!csp_solver.py
+!export_llm_inputs.py
+!generate_benchmark.py
+!llm_runner.py
+!project_common.py
+!prompt_templates.py
+!run_all.py
+!test_project.py
+!validator.py
+!benchmark.json
+!llm_inputs.jsonl
