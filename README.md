@@ -1,6 +1,6 @@
 # CS4263 Group 17: constrained travel planning
 
-This repository contains the current Python implementation, executable prompts, regression tests fixed synthetic benchmark inputs and recorded version-2 evidence for a comparison of classical constraint satisfaction search and direct language model reasoning.
+This repository contains the current Python implementation, executable prompts, regression tests, fixed synthetic benchmark inputs and recorded version-2 evidence for a comparison of classical constraint satisfaction search and direct language model reasoning.
 
 The report, slide deck, proposal, legacy pilot, local guide, caches and build artifacts remain in the local submission workspace. The final measured outputs, scores, settings manifest and raw trial logs are included here so the report can link directly to its evidence.
 
@@ -73,12 +73,14 @@ For publication, the local username prefix in CLI warnings and diagnostic paths 
 
 The recorded study's protocol requested `gpt-6.1-sol` with medium reasoning, two fresh repetitions per case and condition, fixed shuffled order seed 42632 and six workers. Its 432 actual responses and their raw logs are published under `experiments/`. Model availability and CLI features may change over time.
 
-To run fresh trials using a compatible installed Codex CLI and its existing login:
+To run fresh trials using a compatible installed Codex CLI and its existing login, choose a new output path:
 
 ```bash
 python3 llm_runner.py --backend codex --model gpt-6.1-sol \
-  --repetitions 2 --workers 6 --output experiments/v2_llm_outputs.jsonl
+  --repetitions 2 --workers 6 --output experiments/new_run_outputs.jsonl
 ```
+
+The published `experiments/v2_llm_outputs.jsonl` file is already complete. Using that path resumes the recorded run and skips its 432 existing trials. Keep fresh trials in a separate file. To analyse them, score that new file with `validator.py`, then pass the new score file to `analyze_results.py --llm PATH_TO_NEW_SCORES`.
 
 Alternatively, configure `OPENAI_API_KEY` locally, choose an available API model and use `--backend api --model YOUR_MODEL` with a new output path. Fresh runs consume account allowance or incur API usage charges. Never commit credentials.
 
