@@ -1,0 +1,1076 @@
+{
+  "dataset_version": "2.0.0",
+  "base_clusters": 18,
+  "cases": 72,
+  "expected_trials_per_llm_condition": 144,
+  "conditions": {
+    "classical": {
+      "n": 72,
+      "passes": 72,
+      "pass_rate": 1.0,
+      "pass_cluster_95ci": [
+        1.0,
+        1.0
+      ],
+      "feasible_pass_rate": 1.0,
+      "infeasible_accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "violations": 0,
+      "violation_categories": {},
+      "mean_latency_seconds": 0.00016823369027777762,
+      "mean_input_tokens": null,
+      "mean_output_tokens": null,
+      "mean_cost_valid_feasible": 817.9444444444445,
+      "mean_utility_valid_feasible": 14.277777777777779,
+      "mean_nodes": 2.138888888888889,
+      "mean_backtracks": 1.8055555555555556,
+      "generation_errors": 0,
+      "tool_use_trials": 0
+    },
+    "B0": {
+      "n": 144,
+      "passes": 144,
+      "pass_rate": 1.0,
+      "pass_cluster_95ci": [
+        1.0,
+        1.0
+      ],
+      "feasible_pass_rate": 1.0,
+      "infeasible_accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "violations": 0,
+      "violation_categories": {},
+      "mean_latency_seconds": 11.206684844069443,
+      "mean_input_tokens": 12044.458333333334,
+      "mean_output_tokens": 277.125,
+      "mean_cost_valid_feasible": 812.1111111111111,
+      "mean_utility_valid_feasible": 14.833333333333334,
+      "mean_nodes": null,
+      "mean_backtracks": null,
+      "generation_errors": 0,
+      "tool_use_trials": 0
+    },
+    "B1": {
+      "n": 144,
+      "passes": 144,
+      "pass_rate": 1.0,
+      "pass_cluster_95ci": [
+        1.0,
+        1.0
+      ],
+      "feasible_pass_rate": 1.0,
+      "infeasible_accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "violations": 0,
+      "violation_categories": {},
+      "mean_latency_seconds": 12.729947206097226,
+      "mean_input_tokens": 12101.458333333334,
+      "mean_output_tokens": 349.1458333333333,
+      "mean_cost_valid_feasible": 804.9722222222222,
+      "mean_utility_valid_feasible": 14.25,
+      "mean_nodes": null,
+      "mean_backtracks": null,
+      "generation_errors": 0,
+      "tool_use_trials": 0
+    },
+    "B2": {
+      "n": 144,
+      "passes": 143,
+      "pass_rate": 0.9930555555555556,
+      "pass_cluster_95ci": [
+        0.9791666666666666,
+        1.0
+      ],
+      "feasible_pass_rate": 0.9722222222222222,
+      "infeasible_accuracy": 1.0,
+      "balanced_accuracy": 0.9861111111111112,
+      "violations": 1,
+      "violation_categories": {
+        "arithmetic_error": 1
+      },
+      "mean_latency_seconds": 12.895019872375,
+      "mean_input_tokens": 12165.458333333334,
+      "mean_output_tokens": 359.8541666666667,
+      "mean_cost_valid_feasible": 800.2571428571429,
+      "mean_utility_valid_feasible": 14.17142857142857,
+      "mean_nodes": null,
+      "mean_backtracks": null,
+      "generation_errors": 0,
+      "tool_use_trials": 0
+    }
+  },
+  "paired_safeguard_contrasts": {
+    "B1-B0": {
+      "matched_trials": 144,
+      "pass_rate_difference": 0.0,
+      "base_cluster_95ci": [
+        0.0,
+        0.0
+      ]
+    },
+    "B2-B0": {
+      "matched_trials": 144,
+      "pass_rate_difference": -0.006944444444444444,
+      "base_cluster_95ci": [
+        -0.020833333333333332,
+        0.0
+      ]
+    }
+  },
+  "subgroups": {
+    "duration_days": {
+      "3": {
+        "classical": {
+          "n": 24,
+          "passes": 24,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 8.461250833333293e-05,
+          "mean_input_tokens": null,
+          "mean_output_tokens": null,
+          "mean_cost_valid_feasible": 527.1666666666666,
+          "mean_utility_valid_feasible": 7.666666666666667,
+          "mean_nodes": 1.4166666666666667,
+          "mean_backtracks": 2.0833333333333335,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B0": {
+          "n": 48,
+          "passes": 48,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 9.823497288249994,
+          "mean_input_tokens": 11003.75,
+          "mean_output_tokens": 209.79166666666666,
+          "mean_cost_valid_feasible": 525.4166666666666,
+          "mean_utility_valid_feasible": 7.833333333333333,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B1": {
+          "n": 48,
+          "passes": 48,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 11.370445232729168,
+          "mean_input_tokens": 11060.75,
+          "mean_output_tokens": 278.2291666666667,
+          "mean_cost_valid_feasible": 523.0833333333334,
+          "mean_utility_valid_feasible": 7.666666666666667,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B2": {
+          "n": 48,
+          "passes": 48,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 11.377915333291659,
+          "mean_input_tokens": 11124.75,
+          "mean_output_tokens": 288.8125,
+          "mean_cost_valid_feasible": 524.1666666666666,
+          "mean_utility_valid_feasible": 7.75,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        }
+      },
+      "5": {
+        "classical": {
+          "n": 24,
+          "passes": 24,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 0.00016222763333333264,
+          "mean_input_tokens": null,
+          "mean_output_tokens": null,
+          "mean_cost_valid_feasible": 820.3333333333334,
+          "mean_utility_valid_feasible": 14.166666666666666,
+          "mean_nodes": 2.0,
+          "mean_backtracks": 1.6666666666666667,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B0": {
+          "n": 48,
+          "passes": 48,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 11.235895296020834,
+          "mean_input_tokens": 12044.416666666666,
+          "mean_output_tokens": 284.9375,
+          "mean_cost_valid_feasible": 825.9166666666666,
+          "mean_utility_valid_feasible": 15.166666666666666,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B1": {
+          "n": 48,
+          "passes": 48,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 13.1712091303125,
+          "mean_input_tokens": 12101.416666666666,
+          "mean_output_tokens": 360.1875,
+          "mean_cost_valid_feasible": 804.5833333333334,
+          "mean_utility_valid_feasible": 13.5,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B2": {
+          "n": 48,
+          "passes": 48,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 13.245611059000005,
+          "mean_input_tokens": 12165.416666666666,
+          "mean_output_tokens": 369.4583333333333,
+          "mean_cost_valid_feasible": 811.6666666666666,
+          "mean_utility_valid_feasible": 13.833333333333334,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        }
+      },
+      "7": {
+        "classical": {
+          "n": 24,
+          "passes": 24,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 0.00025786092916666733,
+          "mean_input_tokens": null,
+          "mean_output_tokens": null,
+          "mean_cost_valid_feasible": 1106.3333333333333,
+          "mean_utility_valid_feasible": 21.0,
+          "mean_nodes": 3.0,
+          "mean_backtracks": 1.6666666666666667,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B0": {
+          "n": 48,
+          "passes": 48,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 12.560661947937502,
+          "mean_input_tokens": 13085.208333333334,
+          "mean_output_tokens": 336.6458333333333,
+          "mean_cost_valid_feasible": 1085.0,
+          "mean_utility_valid_feasible": 21.5,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B1": {
+          "n": 48,
+          "passes": 48,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 13.648187255250008,
+          "mean_input_tokens": 13142.208333333334,
+          "mean_output_tokens": 409.0208333333333,
+          "mean_cost_valid_feasible": 1087.25,
+          "mean_utility_valid_feasible": 21.583333333333332,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B2": {
+          "n": 48,
+          "passes": 47,
+          "pass_rate": 0.9791666666666666,
+          "pass_cluster_95ci": [
+            0.9375,
+            1.0
+          ],
+          "feasible_pass_rate": 0.9166666666666666,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 0.9583333333333333,
+          "violations": 1,
+          "violation_categories": {
+            "arithmetic_error": 1
+          },
+          "mean_latency_seconds": 14.061533224833335,
+          "mean_input_tokens": 13206.208333333334,
+          "mean_output_tokens": 421.2916666666667,
+          "mean_cost_valid_feasible": 1089.0,
+          "mean_utility_valid_feasible": 21.545454545454547,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        }
+      }
+    },
+    "difficulty": {
+      "high": {
+        "classical": {
+          "n": 24,
+          "passes": 24,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 0.00016631685416666634,
+          "mean_input_tokens": null,
+          "mean_output_tokens": null,
+          "mean_cost_valid_feasible": 885.8333333333334,
+          "mean_utility_valid_feasible": 13.833333333333334,
+          "mean_nodes": 2.3333333333333335,
+          "mean_backtracks": 1.3333333333333333,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B0": {
+          "n": 48,
+          "passes": 48,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 10.961972684874995,
+          "mean_input_tokens": 12049.375,
+          "mean_output_tokens": 270.2916666666667,
+          "mean_cost_valid_feasible": 888.1666666666666,
+          "mean_utility_valid_feasible": 16.0,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B1": {
+          "n": 48,
+          "passes": 48,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 12.441787046145835,
+          "mean_input_tokens": 12106.375,
+          "mean_output_tokens": 339.1875,
+          "mean_cost_valid_feasible": 880.1666666666666,
+          "mean_utility_valid_feasible": 15.5,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B2": {
+          "n": 48,
+          "passes": 48,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 12.896117674458337,
+          "mean_input_tokens": 12170.375,
+          "mean_output_tokens": 359.3125,
+          "mean_cost_valid_feasible": 881.75,
+          "mean_utility_valid_feasible": 15.5,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        }
+      },
+      "low": {
+        "classical": {
+          "n": 24,
+          "passes": 24,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 0.00016925729583333363,
+          "mean_input_tokens": null,
+          "mean_output_tokens": null,
+          "mean_cost_valid_feasible": 779.1666666666666,
+          "mean_utility_valid_feasible": 14.5,
+          "mean_nodes": 2.0416666666666665,
+          "mean_backtracks": 2.0416666666666665,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B0": {
+          "n": 48,
+          "passes": 48,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 11.467861655437495,
+          "mean_input_tokens": 12042.0,
+          "mean_output_tokens": 281.5208333333333,
+          "mean_cost_valid_feasible": 770.3333333333334,
+          "mean_utility_valid_feasible": 14.166666666666666,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B1": {
+          "n": 48,
+          "passes": 48,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 12.910804047770837,
+          "mean_input_tokens": 12099.0,
+          "mean_output_tokens": 357.5625,
+          "mean_cost_valid_feasible": 764.25,
+          "mean_utility_valid_feasible": 13.666666666666666,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B2": {
+          "n": 48,
+          "passes": 48,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 12.975809157958338,
+          "mean_input_tokens": 12163.0,
+          "mean_output_tokens": 366.1875,
+          "mean_cost_valid_feasible": 767.5833333333334,
+          "mean_utility_valid_feasible": 13.833333333333334,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        }
+      },
+      "medium": {
+        "classical": {
+          "n": 24,
+          "passes": 24,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 0.00016912692083333297,
+          "mean_input_tokens": null,
+          "mean_output_tokens": null,
+          "mean_cost_valid_feasible": 788.8333333333334,
+          "mean_utility_valid_feasible": 14.5,
+          "mean_nodes": 2.0416666666666665,
+          "mean_backtracks": 2.0416666666666665,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B0": {
+          "n": 48,
+          "passes": 48,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 11.190220191895834,
+          "mean_input_tokens": 12042.0,
+          "mean_output_tokens": 279.5625,
+          "mean_cost_valid_feasible": 777.8333333333334,
+          "mean_utility_valid_feasible": 14.333333333333334,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B1": {
+          "n": 48,
+          "passes": 48,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 12.837250524375001,
+          "mean_input_tokens": 12099.0,
+          "mean_output_tokens": 350.6875,
+          "mean_cost_valid_feasible": 770.5,
+          "mean_utility_valid_feasible": 13.583333333333334,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B2": {
+          "n": 48,
+          "passes": 47,
+          "pass_rate": 0.9791666666666666,
+          "pass_cluster_95ci": [
+            0.9375,
+            1.0
+          ],
+          "feasible_pass_rate": 0.9166666666666666,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": 0.9583333333333333,
+          "violations": 1,
+          "violation_categories": {
+            "arithmetic_error": 1
+          },
+          "mean_latency_seconds": 12.813132784708328,
+          "mean_input_tokens": 12163.0,
+          "mean_output_tokens": 354.0625,
+          "mean_cost_valid_feasible": 747.0,
+          "mean_utility_valid_feasible": 13.090909090909092,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        }
+      }
+    },
+    "variant": {
+      "budget": {
+        "classical": {
+          "n": 18,
+          "passes": 18,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": null,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": null,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 0.00016657271666666647,
+          "mean_input_tokens": null,
+          "mean_output_tokens": null,
+          "mean_cost_valid_feasible": null,
+          "mean_utility_valid_feasible": null,
+          "mean_nodes": 0.0,
+          "mean_backtracks": 6.666666666666667,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B0": {
+          "n": 36,
+          "passes": 36,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": null,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": null,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 11.737994130861106,
+          "mean_input_tokens": 12041.5,
+          "mean_output_tokens": 307.75,
+          "mean_cost_valid_feasible": null,
+          "mean_utility_valid_feasible": null,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B1": {
+          "n": 36,
+          "passes": 36,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": null,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": null,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 13.740960718805555,
+          "mean_input_tokens": 12098.5,
+          "mean_output_tokens": 393.80555555555554,
+          "mean_cost_valid_feasible": null,
+          "mean_utility_valid_feasible": null,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B2": {
+          "n": 36,
+          "passes": 36,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": null,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": null,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 14.112155873944442,
+          "mean_input_tokens": 12162.5,
+          "mean_output_tokens": 420.44444444444446,
+          "mean_cost_valid_feasible": null,
+          "mean_utility_valid_feasible": null,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        }
+      },
+      "category": {
+        "classical": {
+          "n": 18,
+          "passes": 18,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": null,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": null,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 8.961156666666625e-05,
+          "mean_input_tokens": null,
+          "mean_output_tokens": null,
+          "mean_cost_valid_feasible": null,
+          "mean_utility_valid_feasible": null,
+          "mean_nodes": 0.0,
+          "mean_backtracks": 0.0,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B0": {
+          "n": 36,
+          "passes": 36,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": null,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": null,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 9.094521103027779,
+          "mean_input_tokens": 12045.777777777777,
+          "mean_output_tokens": 172.27777777777777,
+          "mean_cost_valid_feasible": null,
+          "mean_utility_valid_feasible": null,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B1": {
+          "n": 36,
+          "passes": 36,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": null,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": null,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 9.41823744686111,
+          "mean_input_tokens": 12102.777777777777,
+          "mean_output_tokens": 196.02777777777777,
+          "mean_cost_valid_feasible": null,
+          "mean_utility_valid_feasible": null,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B2": {
+          "n": 36,
+          "passes": 36,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": null,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": null,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 9.50276396527777,
+          "mean_input_tokens": 12166.777777777777,
+          "mean_output_tokens": 200.77777777777777,
+          "mean_cost_valid_feasible": null,
+          "mean_utility_valid_feasible": null,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        }
+      },
+      "feasible": {
+        "classical": {
+          "n": 18,
+          "passes": 18,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": null,
+          "balanced_accuracy": null,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 0.0003336794222222222,
+          "mean_input_tokens": null,
+          "mean_output_tokens": null,
+          "mean_cost_valid_feasible": 817.9444444444445,
+          "mean_utility_valid_feasible": 14.277777777777779,
+          "mean_nodes": 8.555555555555555,
+          "mean_backtracks": 0.5555555555555556,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B0": {
+          "n": 36,
+          "passes": 36,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": null,
+          "balanced_accuracy": null,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 16.289747885416663,
+          "mean_input_tokens": 12041.777777777777,
+          "mean_output_tokens": 535.9166666666666,
+          "mean_cost_valid_feasible": 812.1111111111111,
+          "mean_utility_valid_feasible": 14.833333333333334,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B1": {
+          "n": 36,
+          "passes": 36,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": 1.0,
+          "infeasible_accuracy": null,
+          "balanced_accuracy": null,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 19.90749589947223,
+          "mean_input_tokens": 12098.777777777777,
+          "mean_output_tokens": 698.1111111111111,
+          "mean_cost_valid_feasible": 804.9722222222222,
+          "mean_utility_valid_feasible": 14.25,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B2": {
+          "n": 36,
+          "passes": 35,
+          "pass_rate": 0.9722222222222222,
+          "pass_cluster_95ci": [
+            0.9166666666666666,
+            1.0
+          ],
+          "feasible_pass_rate": 0.9722222222222222,
+          "infeasible_accuracy": null,
+          "balanced_accuracy": null,
+          "violations": 1,
+          "violation_categories": {
+            "arithmetic_error": 1
+          },
+          "mean_latency_seconds": 19.85465634366668,
+          "mean_input_tokens": 12162.777777777777,
+          "mean_output_tokens": 700.8611111111111,
+          "mean_cost_valid_feasible": 800.2571428571429,
+          "mean_utility_valid_feasible": 14.17142857142857,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        }
+      },
+      "required_slot": {
+        "classical": {
+          "n": 18,
+          "passes": 18,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": null,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": null,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 8.30710555555556e-05,
+          "mean_input_tokens": null,
+          "mean_output_tokens": null,
+          "mean_cost_valid_feasible": null,
+          "mean_utility_valid_feasible": null,
+          "mean_nodes": 0.0,
+          "mean_backtracks": 0.0,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B0": {
+          "n": 36,
+          "passes": 36,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": null,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": null,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 7.704476256972222,
+          "mean_input_tokens": 12048.777777777777,
+          "mean_output_tokens": 92.55555555555556,
+          "mean_cost_valid_feasible": null,
+          "mean_utility_valid_feasible": null,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B1": {
+          "n": 36,
+          "passes": 36,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": null,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": null,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 7.853094759250003,
+          "mean_input_tokens": 12105.777777777777,
+          "mean_output_tokens": 108.63888888888889,
+          "mean_cost_valid_feasible": null,
+          "mean_utility_valid_feasible": null,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        },
+        "B2": {
+          "n": 36,
+          "passes": 36,
+          "pass_rate": 1.0,
+          "pass_cluster_95ci": [
+            1.0,
+            1.0
+          ],
+          "feasible_pass_rate": null,
+          "infeasible_accuracy": 1.0,
+          "balanced_accuracy": null,
+          "violations": 0,
+          "violation_categories": {},
+          "mean_latency_seconds": 8.11050330661111,
+          "mean_input_tokens": 12169.777777777777,
+          "mean_output_tokens": 117.33333333333333,
+          "mean_cost_valid_feasible": null,
+          "mean_utility_valid_feasible": null,
+          "mean_nodes": null,
+          "mean_backtracks": null,
+          "generation_errors": 0,
+          "tool_use_trials": 0
+        }
+      }
+    }
+  },
+  "llm_trials": 432,
+  "complete": true
+}

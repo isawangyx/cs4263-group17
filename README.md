@@ -1,8 +1,8 @@
 # CS4263 Group 17: constrained travel planning
 
-This repository contains the current Python implementation, executable prompts, regression tests and fixed synthetic benchmark inputs for a comparison of classical constraint satisfaction search and direct language model reasoning.
+This repository contains the current Python implementation, executable prompts, regression tests fixed synthetic benchmark inputs and recorded version-2 evidence for a comparison of classical constraint satisfaction search and direct language model reasoning.
 
-The report, slide deck, proposal, recorded experiment outputs, legacy pilot, local guide, caches and build artifacts are intentionally excluded. The project authors retain those files in the submission workspace.
+The report, slide deck, proposal, legacy pilot, local guide, caches and build artifacts remain in the local submission workspace. The final measured outputs, scores, settings manifest and raw trial logs are included here so the report can link directly to its evidence.
 
 ## Requirements
 
@@ -22,7 +22,7 @@ python3 run_all.py
 
 The local rebuild regenerates the deterministic benchmark and label-free inputs, solves and scores all 72 classical cases, runs regression tests and generates analysis. It makes no model calls and does not regenerate the legacy pilot. Existing independent model records, when present locally, are scored and preserved.
 
-A fresh clone contains no recorded LLM outputs. Its initial analysis therefore contains classical results only and reports the independent experiment as incomplete. Generated outputs remain ignored by Git.
+A fresh clone includes all 432 recorded LLM trials. Scoring and analysing those saved responses requires no model account and makes no new model calls. Running the full rebuild measures classical latency again, so that timing may differ from the published snapshot. To reproduce the published aggregates from the saved scores, run `python3 analyze_results.py` without regenerating classical outputs.
 
 ## Code map
 
@@ -53,9 +53,25 @@ The suite contains 18 feasible and 54 infeasible cases. Every contradiction type
 
 Constraint-load labels describe intended requirements, not an empirically proven hardness ranking. Variants share a base. Always declaring infeasible scores 75% overall, so the analysis also reports feasible success, infeasible accuracy and balanced accuracy.
 
+## Published result evidence
+
+| File | Evidence |
+|---|---|
+| [RESULTS_SUMMARY.md](RESULTS_SUMMARY.md) | Human-readable aggregate and subgroup results. |
+| [analysis_summary.json](analysis_summary.json), [results.csv](results.csv) | Machine-readable aggregates and per-trial metrics. |
+| [classical_outputs.jsonl](classical_outputs.jsonl), [classical_scores.jsonl](classical_scores.jsonl) | 72 classical outputs, measured timing samples and independent scores. |
+| [experiments/v2_llm_outputs.jsonl](experiments/v2_llm_outputs.jsonl) | All 432 model outputs with model/settings metadata, latency, usage and raw-log links. |
+| [experiments/v2_llm_scores.jsonl](experiments/v2_llm_scores.jsonl) | Independent scores for every recorded model trial. |
+| [experiments/v2_llm_outputs.manifest.json](experiments/v2_llm_outputs.manifest.json) | Frozen protocol settings and input/prompt hashes. |
+| [experiments/v2_llm_outputs_raw/](experiments/v2_llm_outputs_raw/) | 432 trial logs containing exact prompts, output text and CLI response events. |
+
+Classical passed 72/72; B0 and B1 each passed 144/144; B2 passed 143/144. The failed `V2T050`, B2, trial 1 remains in the evidence: declared cost 1086 versus computed cost 1066. No answer was repaired or excluded.
+
+For publication, the local username prefix in CLI warnings and diagnostic paths was replaced with `/Users/REDACTED`. Original unedited logs are retained locally. Prompts, model answer text, parsed answers, scores, timestamps, response identifiers, timing and token usage are unchanged. Configuration warning events are preserved; all trials completed with exit code zero, and these warnings are not generation failures.
+
 ## Independent model trials
 
-The recorded study's protocol requested `gpt-6.1-sol` with medium reasoning, two fresh repetitions per case and condition, fixed shuffled order seed 42632 and six workers. Its 432 actual responses remain in the authors' local evidence archive. Model availability and CLI features may change over time.
+The recorded study's protocol requested `gpt-6.1-sol` with medium reasoning, two fresh repetitions per case and condition, fixed shuffled order seed 42632 and six workers. Its 432 actual responses and their raw logs are published under `experiments/`. Model availability and CLI features may change over time.
 
 To run fresh trials using a compatible installed Codex CLI and its existing login:
 

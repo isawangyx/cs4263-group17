@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-11-07T13:13:19.279755+00:00",
+  "settings": {
+    "inputs_sha256": "5ca29b95363c28662647ecd9da2d666a1a0426b53c52ac28b0cd6c03287a45d4",
+    "prompts_sha256": "0eede8aafcfd0852089462cd92604fa2da10fa1e252bfca30ee521d32b03eeae",
+    "backend": "codex",
+    "model": "gpt-6.1-sol",
+    "reasoning": "medium",
+    "repetitions": 2,
+    "conditions": [
+      "B0",
+      "B1",
+      "B2"
+    ],
+    "instances": 72,
+    "order_seed": 42632,
+    "temperature": "provider default; not set",
+    "tool_access": "disabled; reject trial if tool use appears in events"
+  }
+}

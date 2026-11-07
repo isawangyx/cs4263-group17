@@ -1,4 +1,4 @@
-# Publish only the current source code and required benchmark inputs.
+# Publish current source, frozen inputs and the measured version-2 evidence.
 # Everything else remains local unless explicitly added to this allowlist.
 *
 !.gitignore
@@ -17,3 +17,18 @@
 !validator.py
 !benchmark.json
 !llm_inputs.jsonl
+
+# Recorded evidence for the submitted comparison.
+!classical_outputs.jsonl
+!classical_scores.jsonl
+!analysis_summary.json
+!RESULTS_SUMMARY.md
+!results.csv
+!experiments/
+experiments/*
+!experiments/v2_llm_outputs.jsonl
+!experiments/v2_llm_scores.jsonl
+!experiments/v2_llm_outputs.manifest.json
+!experiments/v2_llm_outputs_raw/
+experiments/v2_llm_outputs_raw/*
+!experiments/v2_llm_outputs_raw/*.json
